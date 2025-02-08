@@ -1,0 +1,439 @@
+/* *******************************************ОБЩИЕ НАСТРОЙКИ******************************************* */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Настройки всего сайта */
+body {
+    font-family: 'Source Sans 3';
+    color: #333333;
+    font-weight: 400;
+}
+
+/* Настройка всех ссылок */
+a {
+    color: #607CE6;
+    text-decoration: none;
+}
+
+/* Класс созданный для введения отступов ко всем родительским объектам */
+.container {
+    padding: 0px 30px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* ******************************************************************************** */
+/* **************************************ШАПКА************************************* */
+/* ******************************************************************************** */
+
+/* Див, в котором лого и связь */
+#head {
+    padding-top: 20px
+}
+
+/* Логотип ПИОНЕР */
+#logo {
+    float: left;
+}
+
+/* Связь емейл */
+#email {
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+}
+
+/* Ссылки связи */
+#email a, #conntact a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Текста связи */
+#email p, #conntact p {
+    font-size: 14px;
+}
+
+/* Связь телефон */
+#conntact {
+    float: right;
+    text-align: right;
+}
+
+/* Линия в шапке */
+#line {
+    max-width: 100%;
+}
+
+/* Див, в котором список со вкладками */
+#menu {
+    float: left;
+    width: 75%;
+}
+
+/* Вкладки */
+#list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    list-style: none
+}
+
+/* Обращение к каждой вкладке */
+#list li a {
+    color: black;
+}
+
+/* Надпись ПЕРЕЗВОНИТЕ МНЕ */
+#call_me {
+    float: right;
+    padding-left: 30px;
+    padding-top: 7px;
+    font-size: 19px;
+}
+
+/* Иконка звонка в надписи ПЕРЕЗВОНИТЕ МНЕ */
+#call_me img {
+    width: 19px;
+    padding-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+/* ******************************************************************************** */
+/* ********************************ГЛАВНАЯ***************************************** */
+/* ******************************************************************************** */
+
+/* Главный блок */
+#main {
+    padding-top: 80px;
+}
+
+/* Заголовок главного блока */
+#main h1 {
+    font-size: 60px;
+    float: left;
+    width: 49%;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+/* Текст главного блока */
+#main p {
+    font-size: 16px;
+    margin-top: 30px;
+    width: 300px;
+    float: left;
+}
+
+/* Изображение главного блока */
+#main img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* ******************************************************************************** */
+/* ********************************ОПИСАНИЕ**************************************** */
+/* ******************************************************************************** */
+
+/* Описание */
+#discription {
+    margin-top: 60px;
+}
+
+/* Заголовок описания */
+#discription h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Левый блок текста */
+#p1, #p2 {
+    display: inline-block;
+    width: 49%;
+    line-height: 22.4px;
+    font-size: 16px;
+}
+
+/* Правый блок текста */
+#p3 {
+    float: right;
+    width: 49%;
+    line-height: 22.4px;
+}
+
+/* Настройка изображений в описании */
+#discription img {
+    margin-top: 40px;
+    width: 49%;
+}
+
+/* Первое изображение в описании */
+#disc_image1 {
+    float: left;
+}
+
+/* Второе изображение в описании */
+#disc_image2 {
+    float: right;
+}
+
+/* Отмена обтекаемости последующих элементов */
+#disc_img:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Альтернативная отмена обтекаемости последующих элементов */
+/* #disc_img {
+    overflow: visible
+} */
+
+/* ******************************************************************************** */
+/* ********************************ПРОДУКЦИЯ*************************************** */
+/* ******************************************************************************** */
+
+/* Настройки блока */
+#product {
+    margin-top: 60px;
+}
+
+/* Заголовок блока */
+#product h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+/* *******************ТАБЛИЦА******************* */
+
+#product table {
+    overflow: hidden;
+}
+
+/* Настрока всех блоков таблицы первого ряда, кроме средних */
+.tr1_div {
+    width: 380px;
+    height: 435px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+/* Настрока всех блоков таблицы второго ряда, кроме средних */
+.tr2_div {
+    width: 380px;
+    height: 435px;
+    background-color: #F5F5F5;
+    margin-top: 17px;
+    position: relative;
+}
+
+/* Настройка центрального блока первого ряда */
+.tr1_div_center {
+    width: 380px;
+    height: 435px;
+    background-color: #F5F5F5;
+    margin: 0px 17px;
+    position: relative;
+}
+
+/* Настройка центрального блока второго ряда */
+.tr2_div_center {
+    width: 380px;
+    height: 435px;
+    background-color: #F5F5F5;
+    margin: 0px 17px;
+    margin-top: 17px;
+    position: relative;
+}
+
+/* Изображеник всех блоков таблицы */
+.tr_img img {
+    width: 200px;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 107px;
+}
+
+/* Заголовки всех блоков таблицы */
+.tr_h3 {
+    font-weight: 600;
+    font-size: 28px;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+
+/* Див с текстом товара */
+.tr_text {
+    position: absolute;
+    top: 333px;
+}
+
+/* Ссылка всех блоков таблицы */
+.tr1_div1 a {
+    padding-left: 24px;}
+.tr1_a p {
+    float: left;
+    margin-left: 24px;
+    font-size: 20px;}
+.tr1_a img {
+    width: 6px;
+    height: 11px;
+    position: relative;
+    right: -10px;
+    top: 4px;}
+
+/* ******************************************************************************** */
+/* *****************************ПРЕДСТАВИТЕЛЬСТВА********************************** */
+/* ******************************************************************************** */
+
+/* Настройка блока */
+#map {
+    margin-top: 60px;
+}
+
+/* Заголовок блока */
+#map h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* Карта */
+#map img {
+    width: 1180px;
+    margin-top: 32px;
+}
+
+/* ******************************************************************************** */
+/* **********************************НОВОСТИ*************************************** */
+/* ******************************************************************************** */
+
+/* Настройки блока */
+#news {
+    margin-top: 60px;
+}
+
+/* Заголовок блока */
+#news h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* *******************ТАБЛИЦА******************* */
+
+/* Настройка всех блоков таблицы, кроме среднего */
+.tr_news {
+    width: 380px;
+    height: 478px;
+    margin-top: 32px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+/* Настройка среднего блока таблицы */
+.tr_news_center {
+    width: 380px;
+    height: 478px;
+    margin-top: 32px;
+    background-color: #F5F5F5;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Настройка всех изображений таблицы */
+.tr_news img, .tr_news_center img {
+    max-width: 100%;
+}
+
+/* Настройка текста таблицы */
+.news_text {
+    margin: 9px 16px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* Настройка ссылки и даты таблицы */
+.date_and_a {
+    /* margin-top: 87px; */
+    padding: 0px 16px;
+    position: absolute;
+    top: 432px;}
+.date_and_a a {
+    float: left;}
+.date_and_a p {
+    float: left;
+    color: #888888;
+    position: absolute;
+    left: 292px}
+
+/* ******************************************************************************** */
+/* ***********************************ФУТЕР**************************************** */
+/* ******************************************************************************** */
+
+/* Настройка футера */
+#w_footer {
+    margin-top: 60px;
+    height: 361px;
+    background-color: #333333;
+    color: #F5F5F5;
+}
+
+#footer {
+    padding-top: 56px;
+}
+
+#f1, #f2{
+    float: left;
+    width: 50%;
+}
+
+#footer_list, #footer_list2, #footer_list3 {
+    list-style: none;
+}
+
+#footer_list a, #footer_list2 a, #footer_list3 a {
+    color: rgb(255, 255, 255);
+    font-weight: 350;
+    font-size: 16px;
+}
+
+#footer_list li, #footer_list2 li, #footer_list3 li {
+    margin-bottom: 24px;
+}
+
+.footer_div:not(:last-of-type) {
+    float: left;
+    margin-right: 65px;
+}
+
+.footer_div {
+    margin-bottom: 0px;
+}
+
+#center_ul {
+    margin-left: 30px;
+}
+
+#footer:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#w_footer p {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
